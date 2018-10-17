@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ListGroup.module.scss';
-import { Link } from 'react-router-dom';
 
 class ListItem extends React.Component {
   render() {
@@ -55,7 +54,7 @@ ListGroup.propTypes = {
         typeof propValue[i] !== 'boolean' &&
         propValue[i].length > 0 &&
         (propValue[i].type.name !== ListItem.name ||
-          propValue[i].type.name !== Link.name)
+          propValue[i].type.name !== 'Link')
       ) {
         return new Error('Children Must Be an Instance of a List Item');
       }
