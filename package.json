@@ -1,6 +1,6 @@
 {
-  "name": "bounties-components",
-  "version": "0.1.0",
+  "name": "@bounties-network/components",
+  "version": "0.0.3",
   "main": "./lib/static/js/main.js",
   "peerDependencies": {
     "react": "^16.3.1",
@@ -73,6 +73,7 @@
     "start": "APP_SETTINGS_FILE=staging_settings APP_LOGO=logo node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
+    "prepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "build-storybook && aws s3 sync storybook-static s3://components.bounties.network/ --acl public-read",
