@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import styles from './MarkdownEditor.module.scss';
 import showdown from 'showdown';
-import { DEFAULT_MARKDOWN } from 'utils/constants';
+import { DEFAULT_MARKDOWN, ICON_SET } from 'utils/constants';
 import { Textbox, Modal, Text } from 'components';
 
 showdown.setOption('simpleLineBreaks', true);
@@ -83,9 +83,10 @@ class MarkdownEditor extends React.Component {
               onClick={this.showModal}
             >
               <FontAwesomeIcon
-                icon={['fal', 'eye']}
+                icon={ICON_SET.eye}
                 className={styles.overlayIcon}
-              />Preview
+              />
+              Preview
             </Text>
           }
         />

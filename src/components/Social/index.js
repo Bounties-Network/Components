@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Social.module.scss';
+import { ICON_SET } from 'utils/constants';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const Social = props => {
@@ -10,21 +11,21 @@ const Social = props => {
           window.location.href
         )}`}
       >
-        <FontAwesomeIcon icon={['fab', 'facebook']} className={styles.icon} />
+        <FontAwesomeIcon icon={ICON_SET.facebook} className={styles.icon} />
       </a>
       <a
         href={`https://twitter.com/home?status=${encodeURIComponent(
           window.location.href
         )}`}
       >
-        <FontAwesomeIcon icon={['fab', 'twitter']} className={styles.icon} />
+        <FontAwesomeIcon icon={ICON_SET.twitter} className={styles.icon} />
       </a>
       <a
         href={`http://reddit.com/submit?url=${encodeURIComponent(
           window.location.href
         )}`}
       >
-        <FontAwesomeIcon icon={['fab', 'reddit']} />
+        <FontAwesomeIcon icon={ICON_SET.reddit} />
       </a>
     </div>
   );

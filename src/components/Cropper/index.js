@@ -5,6 +5,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { Circle, Button } from 'components';
 import buttonStyles from 'components/Button/Button.module.scss';
 import styles from './Cropper.module.scss';
+import { ICON_SET } from 'utils/constants';
 
 class Cropper extends React.Component {
   constructor(props) {
@@ -152,7 +153,7 @@ class Cropper extends React.Component {
               <Circle
                 type="text"
                 size="large"
-                input={<FontAwesomeIcon icon={['fal', 'camera']} />}
+                input={<FontAwesomeIcon icon={ICON_SET.camera} />}
                 textColor="darkGrey"
                 color="lightGrey"
                 border

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './FileUpload.module.scss';
+import { ICON_SET } from 'utils/constants';
 import { Text, Button } from 'components';
 import { bytesToSize } from 'utils/helpers';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
@@ -89,7 +90,7 @@ class FileUpload extends React.Component {
                   ): null),
                   <Text typeScale="Body" color={iconColor} key={2}>
                     <FontAwesomeIcon
-                      icon={['fal', 'times']}
+                      icon={ICON_SET.times}
                       className={iconClass}
                       onClick={this.removeFile}
                     />

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ToastContainer.module.scss';
+import { ICON_SET } from 'utils/constants';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { Text } from 'components';
 import { ToastContainer as ToastWrapper } from 'react-toastify';
@@ -26,7 +27,7 @@ const BaseToast = props => {
 const CloseIcon = props => {
   return (
     <i className={styles.closeIcon}>
-      <FontAwesomeIcon icon={['fal', 'times']} />
+      <FontAwesomeIcon icon={ICON_SET.times} />
     </i>
   );
 };

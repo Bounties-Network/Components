@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import styles from './Modal.module.scss';
+import { ICON_SET } from 'utils/constants';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Text, Loader } from 'components';
 import { includes, each, some, map } from 'lodash';
@@ -19,7 +20,7 @@ class Header extends React.Component {
             {closable ? (
               <div className={styles.closeWrapper}>
                 <FontAwesomeIcon
-                  icon={['fal', 'times']}
+                  icon={ICON_SET.times}
                   className={styles.closeIcon}
                   onClick={onClose}
                 />
