@@ -11,19 +11,19 @@ const Toast = (type, message, link, onClose) => {
   let icon;
   let messageType;
   if (type === NOTIFICATION) {
-    icon = ['far', 'info-circle'];
+    icon = ['fas', 'info-circle'];
     messageType = callToast.TYPE.INFO;
   }
   if (type === SUCCESS) {
-    icon = ['fal', 'check-circle'];
+    icon = ['far', 'check-circle'];
     messageType = callToast.TYPE.SUCCESS;
   }
   if (type === ERROR) {
-    icon = ['fal', 'exclamation-triangle'];
+    icon = ['fas', 'exclamation-triangle'];
     messageType = callToast.TYPE.ERROR;
   }
   if (type === TRANSACTION) {
-    icon = ['far', 'ellipsis-h'];
+    icon = ['fas', 'ellipsis-h'];
     messageType = callToast.TYPE.WARNING;
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "@bounties-network/components",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "./lib/static/js/main.js",
   "peerDependencies": {
     "react": "^16.3.1",
@@ -10,6 +10,8 @@
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-regular-svg-icons": "^5.4.1",
+    "@fortawesome/free-solid-svg-icons": "^5.4.1",
     "@fortawesome/react-fontawesome": "0.0.20",
     "autoprefixer": "7.1.6",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -22,7 +24,6 @@
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
-    "jest": "20.0.4",
     "moment": "^2.22.2",
     "node-sass": "^4.8.3",
     "node-sass-chokidar": "^1.2.2",

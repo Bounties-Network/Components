@@ -1,3 +1,8 @@
+import './styles/flexboxgrid.css';
+import './styles/index.scss';
+import './fontAwesome';
+import './styles/Toastify.scss';
+
 export { default as Avatar } from './components/Avatar';
 export { default as Button } from './components/Button';
 export { default as Card } from './components/Card';
